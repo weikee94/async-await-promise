@@ -13,19 +13,19 @@ api using
 
 
 promise example one: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/promiseone.png "promise example one")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/promiseone.png "promise example one")
 
 async await axios example one: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/asyncawaitaxios.png "async await axios")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/asyncawaitaxios.png "async await axios")
 
 async await fetch example one: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/asyncawaitfetch.png "async await fetch")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/asyncawaitfetch.png "async await fetch")
 
 promise example two: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/promisetwo.png "promise example two")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/promisetwo.png "promise example two")
 
 async await axios example two: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/asyncawaitaxiostwo.png "async await axios example two")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/asyncawaitaxiostwo.png "async await axios example two")
 
 async await fetch example two: 
-![Image](https://github.com/weikee94/async-await/blob/master/images/asyncawaitfetchtwo.png "async await fetch example two")
+![Image](https://github.com/weikee94/async-await-promise/blob/master/images/asyncawaitfetchtwo.png "async await fetch example two")

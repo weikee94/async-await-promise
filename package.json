@@ -1,0 +1,24 @@
+{
+  "name": "async-await",
+  "version": "1.0.0",
+  "description": "- async await promise",
+  "main": "app-promises.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weikee94/async-await-promise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weikee94/async-await-promise/issues"
+  },
+  "homepage": "https://github.com/weikee94/async-await-promise#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}

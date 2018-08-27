@@ -24,7 +24,7 @@ const grades = [
     },
     {
         id: 3,
-        schoolId: 101,
+        schoolId: 102,
         grade: 80,
     }
 ];
@@ -64,14 +64,56 @@ const getGrade = (schoolId) => {
     })
 }
 
-getUser(4).then((user) => {
-    console.log(user);    
-}).catch((e) => {
-    console.log(e);
-});
+// Wei has a x% in the class
+const getStatus = (userId) => {
+    let user;
+    return getUser(userId).then((tempUser) => {
+        // define user 在这里的原因是为了让下面的function 可以access
+        user = tempUser;
+        return getGrade(user.schoolId);
+    }).then((grades) => {
+        return `${user.name}`;
+    })
+}
 
-getGrade(101).then((grades) => {
-    console.log(grades);
+// async await
+
+// these two are identical same 
+() => {
+    return new Promise((resolve, reject) => {
+        resolve('Mike');
+    })
+}
+
+const getStatusAlt = async (userId) => {
+    // throw new Error('This is an error');
+    // return 'Mike';
+    const user = await getUser(userId);
+    const grades = await getGrade(user.schoolId);
+    
+    console.log(user, grades);
+}
+
+// getUser(4).then((user) => {
+//     console.log(user);    
+// }).catch((e) => {
+//     console.log(e);
+// });
+
+// getGrade(101).then((grades) => {
+//     console.log(grades);
+// }).catch((e) => {
+//     console.log(e);
+// });
+
+// getStatus(1).then((status) => {
+//     console.log(status);
+// }).catch((e) => {
+//     console.log(e);
+// });
+
+getStatusAlt(123).then((name) => {
+    console.log(name);
 }).catch((e) => {
     console.log(e);
 });
